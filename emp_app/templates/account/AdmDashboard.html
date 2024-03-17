@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Add your CSS links or styles here -->
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <!-- Add any header content or navigation links here -->
+    </header>
+
+    <section id="admin-stats">
+        <!-- Add admin statistics here -->
+        <div>
+            <h2>System Statistics</h2>
+            <p>Total Employees: 100</p>
+            <p>Total Departments: 5</p>
+            <!-- Add more stats as needed -->
+        </div>
+    </section>
+
+    <section id="employee-management">
+        <!-- Add employee management features here -->
+        <h2>Employee Management</h2>
+        <ul>
+            <li><a href="/admin/employees">View All Employees</a></li>
+            <li><a href="/admin/employees/add">Add New Employee</a></li>
+            <li><a href="/admin/departments">Manage Departments</a></li>
+            <!-- Add more management options as needed -->
+        </ul>
+    </section>
+
+    <section id="system-logs">
+        <!-- Add system logs or notifications here -->
+        <h2>System Logs</h2>
+        <ul>
+            <li>Recent Activity: [Activity details]</li>
+            <li>Errors: [Error details]</li>
+            <!-- Add more log information as needed -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Admin Management System</p>
+        <!-- Add any footer content or links here -->
+    </footer>
+
+    <!-- Add your JavaScript links or scripts here -->
+    <script>
+        // Add your scripts here
+    </script>
+    <button onclick="location.href='{{url_for('logout')}}';">Logout</button>
+    <button onclick="location.href='{{url_for('profile')}}';">my profile</button>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <!--Load messages-->
+           {% include 'alerts.html'%}
+        </div>
+    </div>
+</body>
+
+</html>

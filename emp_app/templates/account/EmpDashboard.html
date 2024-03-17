@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <!-- Add your CSS links or styles here -->
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Employee Dashboard</h1>
+        <!-- Add any header content or navigation links here -->
+    </header>
+
+    <section id="employee-info">
+        <!-- Add employee information here -->
+        <div>
+            <img src="profile-picture.jpg" alt="Employee Picture">
+            <h2>Employee Name</h2>
+            <p>Employee ID: #123456</p>
+            <p>Position: Software Developer</p>
+            <p>Department: IT</p>
+        </div>
+    </section>
+
+    <section id="quick-stats">
+        <!-- Add quick stats here -->
+        <div>
+            <h2>Quick Stats</h2>
+            <p>Total Hours Worked: 200</p>
+            <p>Completed Tasks: 15</p>
+            <!-- Add more stats as needed -->
+        </div>
+    </section>
+    <button onclick="location.href='/myaccount/profile';">myprofile</button>
+    <button onclick="location.href='{{url_for('logout')}}';">Logout</button>
+    <!-- Add more sections for tasks, leave, performance, etc. -->
+
+    <footer>
+        <p>&copy; 2024 Employee Management System</p>
+        <!-- Add any footer content or links here -->
+    </footer>
+
+    <!-- Add your JavaScript links or scripts here -->
+    <script>
+        // Add your scripts here
+    </script>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <!--Load messages-->
+           {% include 'alerts.html'%}
+        </div>
+    </div>
+</body>
+
+</html>

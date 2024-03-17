@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Dashboard</title>
+    <!-- Add your CSS links or styles here -->
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Super Admin Dashboard</h1>
+        <!-- Add any header content or navigation links here -->
+    </header>
+
+    <section id="super-admin-stats">
+        <!-- Add super admin statistics here -->
+        <div>
+            <h2>System Overview</h2>
+            <p>Total Users: 1000</p>
+            <p>Total Departments: 20</p>
+            <!-- Add more stats as needed -->
+        </div>
+    </section>
+
+    <section id="user-management">
+        <!-- Add user management features here -->
+        <h2>User Management</h2>
+        <ul>
+            <li><a href="/super-admin/users">View All Users</a></li>
+            <li><a href="/super-admin/users/add">Add New User</a></li>
+            <li><a href="/super-admin/roles">Manage Roles</a></li>
+            <!-- Add more user management options as needed -->
+        </ul>
+    </section>
+
+    <section id="system-settings">
+        <!-- Add system settings and configurations here -->
+        <h2>System Settings</h2>
+        <ul>
+            <li><a href="/super-admin/settings/general">General Settings</a></li>
+            <li><a href="/super-admin/settings/security">Security Settings</a></li>
+            <!-- Add more system settings options as needed -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Super Admin Management System</p>
+        <!-- Add any footer content or links here -->
+    </footer>
+
+    <!-- Add your JavaScript links or scripts here -->
+    <script>
+        // Add your scripts here
+    </script>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <!--Load messages-->
+           {% include 'alerts.html'%}
+        </div>
+    </div>
+</body>
+
+</html>

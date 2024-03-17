@@ -1,0 +1,38 @@
+difference between foreign key and many to many
+how to define many to many relationship in flask
+
+lazy loading in flask
+caching in flask
+handle session execution 
+
+
+request-response cycle->client request from ui server recives user request then process the request and provides response accordingly
+pagination(page = request.args.get('page', 1, type=int))->to manage applicationwith divideing it in small chunks to manage easily rather then having lasrge set of data execution single time
+searching-> content.normalize=> then response based on search
+
+riad-azz
+flask--template
+custom validatiion  
+one to many =many to one,many to many=>3rd table
+
+
+
+jwt
+middeleware or url
+caching
+-----------------------
+topic
+
+rebase vs revake
+git fetch vs pull
+
+
+
+POSTMEN
+
+user on leave in system
+email token passing
+search(user,task,project)
+project(defination,enterprice,related users to project(details))
+task->task complete(per employee)->today ticket()
+role of user for ->multiple enterprice
